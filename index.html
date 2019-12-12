@@ -120,7 +120,9 @@
         //   done();
       }, 500);
 
-      var source = new EventSource("/events");
+      var source = new EventSource(
+        "https://fierce-gorge-44771.herokuapp.com/events"
+      );
       var twitter = [];
 
       var w = window.innerWidth;
